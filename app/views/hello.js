@@ -1,4 +1,6 @@
 export default function (result) {
-    //$('#app').append($('<h1>').text(`Hello ${result}!!!`));
-    console.log('result: '+result.date);
+    $('#app')
+    .append($('<h1>').text(`Hello ${result.title}!!!`))
+    .append($('<p>').text(`${result.explanation}`));
+    //console.log('result: '+result);
 }
