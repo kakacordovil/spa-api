@@ -1,5 +1,7 @@
 export default function (result) {
-    $('#app').append($('<h1>').text(`hello ${result.title}`))
+    $('#app').empty()
+    .append($('<h1>').text(`PIC OF THE DAY`))
+    .append($('<h2>').text(`${result.title}`))
     .append($('<p>').text(`${result.explanation}`))
     .append($('<img>').attr('src', `${result.url}`));
     
